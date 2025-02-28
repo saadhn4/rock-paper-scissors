@@ -23,7 +23,10 @@
         score.wins=0;
         score.losses=0;
         score.ties=0;
+        document.querySelector('.js-result').innerHTML = '';
+        document.querySelector('.js-moves').innerHTML = ``;
         updateScore();
+    
         localStorage.setItem('score', JSON.stringify(score));
 "
       class="reset-score-btn"
